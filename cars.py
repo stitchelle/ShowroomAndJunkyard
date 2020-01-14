@@ -21,8 +21,11 @@ print(showroom)
 # Someone who owns a junkyard full of old cars has approached you about buying the entire inventory. In the new set, add some different cars, but also add a few that are the same as in the showroom set.
 junkyard = {"ranger", "rx8", "accord", "maxima"}
 # 2. Use the intersection method to see which cars exist in both the showroom and that junkyard.
-showroomAndJunkyard = showroom.intersection(junkyard)
-print(showroomAndJunkyard)
+intersec = showroom.intersection(junkyard)
+print(intersec)
 # 3. Now you're ready to buy the cars in the junkyard. Use the union method to combine the junkyard into your showroom.
-
+showroomAndJunkyard = showroom.union(junkyard)
+print(showroomAndJunkyard)
 # 4. Use the discard() method to remove any cars that you acquired from the junkyard that you do not want in your showroom.
+showroomAndJunkyard.discard("maxima")
+print(showroomAndJunkyard)
